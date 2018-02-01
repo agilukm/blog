@@ -36,4 +36,6 @@ class BlogTest extends AlbertCht\Lumen\Testing\TestCase
 		$response = $this->call('delete','/posts/',['data'=>[['id'=>App\Services\Post\Post::all()->random()->id]]]);
 		$response->assertStatus(200);
 	}
+
+	//its done
 }
